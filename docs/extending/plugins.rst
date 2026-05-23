@@ -162,7 +162,7 @@ under evaluation may have defeated the whitelister.
                 time.sleep(0.25)
                 client.sendall(b"T\r\n\r\n")
                 server_data = client.recv(1024)
-                logger.debug("Data recieved: %s", server_data.decode('utf-8', 'ignore'))
+                logger.debug("Data received: %s", server_data.decode('utf-8', 'ignore'))
                 if server_data:
                     fitness += 100
                 else:
@@ -249,7 +249,7 @@ Putting it all together:
                 time.sleep(0.25)
                 client.sendall(b"T\r\n\r\n")
                 server_data = client.recv(1024)
-                logger.debug("Data recieved: %s", server_data.decode('utf-8', 'ignore'))
+                logger.debug("Data received: %s", server_data.decode('utf-8', 'ignore'))
                 if server_data:
                     fitness += 100
                 else:
